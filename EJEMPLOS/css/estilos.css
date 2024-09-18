@@ -1,0 +1,49 @@
+
+
+body {
+    background-color: bisque;
+    color: rgb(27, 2, 2);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 2px solid rgb(27, 2, 2) ;
+    padding: 0.8rem 1.2rem;
+    background-color: rgb(241, 210, 229);
+}
+h1:hover {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 2px solid rgb(23, 29, 2) ;
+    padding: 0.8rem 1.2rem;
+    background-color: rgb(241, 151, 206);
+}
+
+.contenedor {
+    background-color: rgb(166, 100, 228);
+    color: rgb(23, 29, 2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid rgb(23, 29, 2);
+    overflow: hidden;
+}
+
+img {
+    filter: hue-rotate(0deg) saturate(100%) brightness(50%) sepia(1) hue-rotate(-90deg);
+  transition: filter 0.3s ease; /* Suaviza la transición */
+}
+img:hover {
+    filter: none;
+  transition: none; /* Suaviza la transición */
+}

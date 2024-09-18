@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $brand_name; ?> - Sitio Comercial</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Calzados Únicos <?php echo $brand_name; ?></h1>
+        <p>El mejor lugar para tus gustos en zapatos.</p>
+    </header>
+
+    <center><h2>Tienda en Línea</h2></center>
+    <center><h3>zapatos de marca</h3></center>
+    <br>
+    <br>
+    <div class=".contenedor">
+    <img src="zapatos.jpg" width="400" heigth="100">
+    </div>
+    
+    <p>Marca: Nike
+    <br>
+    Precio: $3,600
+    <br>
+    Medida: M 8.5 / W 10
+    
+    <hr>
+    
+    <br>
+    <br>
+    <div class=".contenedor">
+    <img src="zapatos 2.png" width="400" heigth="100">
+    </div>
+    
+    <p>Marca: Jordan
+    <br>
+    Precio: $3,400
+    <br>
+    Medida: M 9 / W 10.5
+    
+    <hr>
+    
+    <br>
+    <br>
+    <div class=".contenedor">
+    <img src="zapatos 3.jpg" width="400" heigth="100">
+    </div>
+    
+    <p>Marca: Adidas
+    <br>
+    Precio: $1,300
+    <br>
+    Medida: M 9 / W 10.5
+    </p>
+    
+    <hr>
+    
+    <br>
+    <br>
+    <div class=".contenedor">
+    <img src="zapatos 4.webp" width="400" heigth="100">
+    </div>
+    
+    <p>Marca: New Balance
+    <br>
+    Precio: $1,200
+    <br>
+    Medida: M 11 / W 9.5
+    </p>
+    
+    <hr>
+    
+    <br>
+    <br>
+    <div class=".contenedor">
+    <img src="zapatos 5.webp" width="400" heigth="100">
+    </div>
+    
+    <p>Marca: Converse
+    <br>
+    Precio: $1,800
+    <br>
+    Medida: M 10 / W 11.6
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <section>
+        <h2>Contáctanos</h2>
+        <form method="POST" action="">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Mensajes Recibidos</h2>
+        <ul>
+            <?php foreach ($data_list as $entry): ?>
+                <li><?php echo htmlspecialchars($entry); ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </section>
+</body>
+</html>

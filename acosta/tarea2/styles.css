@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #54beff;
+    color: #2F4F4F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5a22de;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: Berlin Sans FB Demi;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #5a22de;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffff
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0048ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a17ad;
+    transition: background-color 0.8s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    color:#ffff
+}
+
+footer {
+    background: #273475;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}

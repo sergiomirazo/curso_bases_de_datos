@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #350e73;
+    color: #f898e5;
+    margin: 0;
+    padding: 0;
+   
+        }
+    </script>
+    <!-- Incluir el script de la API de Google Maps -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap">
+    </script>
+
+
+
+
+
+}
+
+header {
+    background-color: #23b388;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #1c8ca8;
+    border-radius: 5px;
+    background-color: #6617ba;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #c387ff;
+    color: rgb(13, 154, 179);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0832b9;
+    transition: background-color 0.8s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #5509b1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}

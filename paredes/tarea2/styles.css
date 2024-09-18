@@ -1,0 +1,82 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Color de fondo beige claro */
+    color: #2F4F4F; /* Color del texto gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #6988ca; /* Color de fondo azul claro */
+    color: white; /* Color del texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for header text */
+h1 {
+    margin: 0;
+}
+
+/* Section styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #5f5deb; /* Color de borde azul */
+    border-radius: 5px;
+    background-color: #FFF8DC; /* Color de fondo amarillo claro */
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold; /* Hacer que las etiquetas sean más visibles */
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5f5deb; /* Color de borde azul */
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+}
+
+/* Button styles */
+button {
+    background-color: #0011ff; /* Color de fondo azul oscuro */
+    color: white; /* Color del texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Aumentar el tamaño de fuente para mejor legibilidad */
+    transition: background-color 0.3s; /* Suavizar el cambio de color */
+}
+
+/* Button hover state */
+button:hover {
+    background-color: #0000cc; /* Azul más oscuro en hover */
+}
+
+/* Unordered list styles */
+ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0;
+    margin: 0; /* Asegurarse de que no haya márgenes por defecto */
+}
+
+/* List item styles */
+li {
+    background-color: #F0E68C; /* Color de fondo amarillo claro */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Añadir sombra sutil */
+}
