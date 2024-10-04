@@ -18,5 +18,3 @@ La durabilidad garantiza que, una vez que una transacción se consigna, sus efec
 * Ejemplo: 
 
 Consideremos un sistema sencillo de comercio electrónico en el que los clientes pueden hacer pedidos. El concepto de coherencia garantiza que el sistema pase de un estado válido a otro al procesar un pedido. Por ejemplo, si un cliente intenta pedir un producto que está agotado, la transacción se anula y el sistema permanece en un estado válido.
-
-Traducción realizada con la versión gratuita del traductor DeepL.com
