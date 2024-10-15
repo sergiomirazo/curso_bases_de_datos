@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fb3434;
+    color: #2F4F4F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #430303;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: Berlin Sans FB Demi;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #610909;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffff
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a10707;
+    transition: background-color 0.8s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    color:#ffff
+}

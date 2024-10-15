@@ -1,0 +1,34 @@
+.contenedor {
+    width: 100%;
+    height: 400px; /* Corregido '400x' a '400px' */
+}
+
+body {
+    background-color: rgb(21, 77, 85);
+    padding: 100px;
+    font-family: Arial, sans-serif; /* Añadido para mejorar la tipografía */
+    color: white; /* Color de texto general para mejor contraste */
+}
+
+h1 {
+    color: rgb(9, 121, 226);
+    border-radius: 0.8rem;
+    border: 2px solid rgb(39, 143, 143);
+    padding: 0.8rem 4rem;
+    text-align: center; /* Centrando el título */
+}
+
+p {
+    color: rgb(44, 44, 145);
+    font-size: 1rem; /* Aumentado el tamaño de fuente para mejor legibilidad */
+    text-align: justify; /* Corregido 'Justify' a 'justify' */
+    line-height: 1.5; /* Mejorado el interlineado */
+    margin: 1rem 0; /* Añadido margen para separación */
+}
+
+img {
+    filter: sepia(100%);
+    border-radius: 1.2rem;
+    max-width: 100%; /* Asegura que las imágenes no excedan el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

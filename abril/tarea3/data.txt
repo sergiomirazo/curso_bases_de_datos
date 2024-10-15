@@ -1,0 +1,1 @@
+Nombre: sergio | Apellido: mirazo | Correo: sergio@gmail | Deporte favorito: futbol | Comida favorita: pizza | Música favorita: metallica | Pasatiempos: tocar guitarra

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario para Trabajar en la Empresa de Álvaro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario para Trabajar en la Empresa de Álvaro</h1>
+        <form id="surveyForm">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="Ingresa tu nombre">
+
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Ingresa tu apellido">
+
+            <label for="birthDate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+            <label for="gender">Sexo:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Selecciona...</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label>Comida Favorita:</label>
+            <div class="radio-group">
+                <input type="radio" id="sushi" name="food" value="sushi" required>
+                <label for="sushi">Sushi</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="hamburguesa" name="food" value="hamburguesa" required>
+                <label for="hamburguesa">Hamburguesa</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="pasta" name="food" value="pasta" required>
+                <label for="pasta">Pasta</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="pizza" name="food" value="pizza" required>
+                <label for="pizza">Pizza</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="otroFood" name="food" value="otro" onclick="showOtherFoodInput()" required>
+                <label for="otroFood">Otro</label>
+                <input type="text" id="otherFood" name="otherFood" style="display:none;" placeholder="Especifica cuál...">
+            </div>
+
+            <label for="musicGenre">Género de Música Favorita:</label>
+            <select id="musicGenre" name="musicGenre" required>
+                <option value="">Selecciona...</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="clasica">Clásica</option>
+                <option value="reggaeton">Reggaetón</option>
+                <option value="otroGenre" onclick="showOtherGenreInput()">Otro</option>
+            </select>
+            <input type="text" id="otherGenre" name="otherGenre" style="display:none;" placeholder="Especifica cuál...">
+        
+            <label for="favoriteMusic">Música Favorita:</label>
+            <input type="text" id="favoriteMusic" name="favoriteMusic" required placeholder="Ingresa tu música favorita">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="message" class="hidden"></div>
+        <div id="contactInfo" class="hidden">
+            <p>MUCHAS GRACIAS,HEMOS RECIBIDO TUS DATOS. NOS PONDREMOS EN CONTACTO CONTIGO. CUALQUIER COSA , REPORTATE Al 6624508338.</p>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Datos Registrados:</h2>
+            <p id="resultData"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Obtener valores del formulario
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const birthDate = document.getElementById('birthDate').value;
+            const email = document.getElementById('email').value;
+            const gender = document.getElementById('gender').value;
+            const food = document.querySelector('input[name="food"]:checked').value;
+            const otherFood = document.getElementById('otherFood').value;
+            const musicGenre = document.getElementById('musicGenre').value;
+            const otherGenre = document.getElementById('otherGenre').value;
+            const favoriteMusic = document.getElementById('favoriteMusic').value;
+
+            // Preparar mensaje de resultados
+            const resultData = `
+                Nombre: ${firstName}<br>
+                Apellido: ${lastName}<br>
+                Fecha de Nacimiento: ${birthDate}<br>
+                Correo: ${email}<br>
+                Sexo: ${gender}<br>
+                Comida Favorita: ${food === 'otro' ? otherFood : food}<br>
+                Género de Música Favorita: ${musicGenre === 'otroGenre' ? otherGenre : musicGenre}<br>
+                Música Favorita: ${favoriteMusic}
+            `;
+            
+            // Mostrar mensajes
+            document.getElementById('message').innerText = '¡Gracias por participar en la encuesta!';
+            document.getElementById('message').classList.remove('hidden');
+            document.getElementById('contactInfo').classList.remove('hidden');
+            document.getElementById('resultData').innerHTML = resultData;
+            document.getElementById('result').classList.remove('hidden');
+
+            // Reiniciar formulario
+            this.reset();
+        });
+
+        function showOtherFoodInput() {
+            const otherFoodInput = document.getElementById('otherFood');
+            otherFoodInput.style.display = 'block';
+        }
+
+        function showOtherGenreInput() {
+            const otherGenreInput = document.getElementById('otherGenre');
+            otherGenreInput.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

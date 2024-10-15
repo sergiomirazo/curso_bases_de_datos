@@ -1,0 +1,30 @@
+.contenedor{
+    width: 100%;
+    height: 400x;
+    }
+    
+    body {
+        background-color: rgb(203, 221, 237);
+        padding: 100px;
+    }
+    
+    h1 {
+        color: rgb(235, 67, 67);
+        border-radius: 0.8rem;
+        border: 2px solid rgb(219, 19, 159);
+        padding: 0.8rem 4rem;
+    }
+    
+    p{
+    color:blue;
+    font-size: 0.8rem;
+    text-align:Justify;
+    
+    }
+    
+    img {
+        
+        filter: sepia(100%);
+        border-radius: 1.2rem;
+        
+    }
