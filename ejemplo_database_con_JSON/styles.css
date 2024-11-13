@@ -1,0 +1,23 @@
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+}
+img {
+    width: 100%;
+}
+.product-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+}
+.card:hover {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(185, 185, 221);
+}

@@ -1,0 +1,39 @@
+[
+    {
+      "title": "iPhone 13 Pro",
+      "description": "Smartphone de alta gama con pantalla OLED Super Retina XDR de 6.1 pulgadas, chip A15 Bionic y cámara de 12 MP. Potencia y diseño elegantes.",
+      "image": "https://images.pexels.com/photos/238541/pexels-photo-238541.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 1099.99
+    },
+    {
+      "title": "Teclado Mecánico RGB Verde",
+      "description": "Teclado mecánico compacto con retroiluminación RGB verde, ideal para gaming y trabajo en oficina. Diseño ergonómico y alta durabilidad.",
+      "image": "https://images.pexels.com/photos/5192094/pexels-photo-5192094.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 79.99
+    },
+    {
+      "title": "Kit de Teclado y Joystick Gamer",
+      "description": "Set de teclado y joystick diseñado para gamers, compatible con PC y consolas. Experimenta precisión y control con estilo.",
+      "image": "https://images.pexels.com/photos/2015876/pexels-photo-2015876.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 129.99
+    },
+    {
+      "title": "Tablet Android con Teclado Bluetooth",
+      "description": "Tablet moderna con pantalla de 10.5 pulgadas y teclado Bluetooth incluido. Perfecta para productividad y entretenimiento en movimiento.",
+      "image": "https://images.pexels.com/photos/25809253/pexels-photo-25809253/free-photo-of-tecnologia-monitor-mostrar-exhibicion.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 299.99
+    },
+    {
+      "title": "Apple Watch Series 7",
+      "description": "Smartwatch de última generación con pantalla Retina siempre activa, resistente al agua y múltiples funciones de salud y fitness.",
+      "image": "https://images.pexels.com/photos/10567238/pexels-photo-10567238.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 399.99
+    },
+    {
+      "title": "MacBook Pro 16\" 2023",
+      "description": "Portátil profesional de Apple con chip M2 Pro, pantalla Retina de 16 pulgadas y batería de larga duración. Ideal para trabajo creativo y profesional.",
+      "image": "https://images.pexels.com/photos/9635254/pexels-photo-9635254.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 2499.99
+    }
+]
+  
