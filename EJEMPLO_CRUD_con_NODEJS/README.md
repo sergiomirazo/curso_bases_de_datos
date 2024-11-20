@@ -2,7 +2,9 @@
 
 Primero, asegúrate de tener Node.js instalado en tu máquina. Lo puedes instalar aquí: <a href="https://nodejs.org/en/download/package-manager">https://nodejs.org/en/download/package-manager</a>
 
-1. Crea un nuevo directorio para tu proyecto y navega a él:
+En este repositorio ya están los paquetes necesarios de Node, pero también puedes crear tu proyecto Node de cero, solo asegurate de borrar los dos archivos package.json. 
+
+1. Puedes crear un nuevo directorio para tu proyecto y navega a él usando la consola. Si das click derecho, puedes poner en **Abrir una Terminal** para abrir la consola en el directorio que deseas. Ingresas lo siguiente en la consola:
 
    ```bash
    mkdir mi-app
@@ -21,6 +23,13 @@ Primero, asegúrate de tener Node.js instalado en tu máquina. Lo puedes instala
    npm install express sqlite3 body-parser
    ```
 
+4.  **Ejecuta el archivo con Node.js**: Ahi mismo en la terminal, ejecuta el archivo `server.js` utilizando el siguiente comando:
+
+   ```bash
+   node server.js
+   ```
+
+   Esto iniciará el proceso que está definido en `server.js`.
 ### Rutas CRUD Explicadas
 
 1. **Crear un nuevo usuario (POST `/usuarios`)**: Envía un JSON con `nombre`, `usuario`, `email`, y `contrasena` para crear un nuevo usuario.
